@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Dessert Date</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #additionalImage img {
+            width: 150px; /* Adjust the size of the additional image here */
+            position: relative; /* Ensures the image stays above the NO button */
+            z-index: 10; /* Keep the image above other elements */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="introMessages">
+            <h1 id="introMessage"></h1>
+            <button id="continueButton">CONTINUE</button>
+        </div>
+        
+        <h1 id="mainTitle" style="display:none;">Will you go on a virtual dessert date with me (I dare you say NO!)</h1>
+        
+        <div class="buttons" style="display:none;">
+            <button id="yesButton">YES</button>
+            <button id="noButton">NO</button>
+        </div>
+        
+        <div id="message"></div>
+        
+        <div id="finalMessage" style="display:none;">
+            <p style="font-size: 24px;">Yay! Can't wait for our dessert date!<br><br>
+                <u>Venue:</u> Facetime<br>
+                <u>Date:</u> 1st August 2024<br>
+                <u>Time:</u> Voh depend krega ke aap kab <b><u>PADHAE KRKE</u></b> free hoge!!!</p>
+            <img src="./babyyoda.gif" alt="Dessert Date GIF" class="finalImage">
+        </div>
+
+        <div id="additionalImage" style="display:none;">
+            <img src="./cryingyoda.png" alt="Cute Image" />
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
